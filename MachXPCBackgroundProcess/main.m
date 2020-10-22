@@ -45,7 +45,6 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        XPCService *service = [XPCService new];
         [MachXPCService registerObject:service
                         withIdentifier:[NSString stringWithUTF8String:argv[0]]
                                forHost:[NSString stringWithUTF8String:argv[1]]
