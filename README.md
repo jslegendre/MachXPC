@@ -31,4 +31,4 @@ MachXPCHost *host = [[MachXPCHost alloc] initWithName:@"my.host.identifier" conn
 ```
 
 ### Example
-A full example/demo project has been included 
+A full example/demo project is included in the project
