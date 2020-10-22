@@ -11,7 +11,6 @@
 #import <servers/bootstrap.h>
 
 @interface XPCService : NSObject <NSXPCListenerDelegate, ServiceProtocol>
-//@property (weak) NSXPCListener *listener;
 @property (weak) NSXPCConnection *hostConnection;
 @end
 
@@ -28,16 +27,6 @@
         
     });
 }
-
-//- (id)init {
-//    self = [super init];
-//    if (self != nil) {
-//        self.listener = [NSXPCListener anonymousListener];
-//        self.listener.delegate = self;
-//        [self.listener resume];
-//    }
-//    return self;
-//}
 
 #pragma mark XPCListenerDelegate
 
@@ -61,17 +50,8 @@ int main(int argc, const char * argv[]) {
                         withIdentifier:[NSString stringWithUTF8String:argv[0]]
                                forHost:[NSString stringWithUTF8String:argv[1]]
                      completionHandler:^(BOOL success) { NSLog(@"Success? %d", success); }];
-        
-//        MachXPCService *mxsService = [[MachXPCService alloc] initWithListener:service.listener
-//                                                               withIdentifier:[NSString stringWithUTF8String:argv[0]]
-//                                                                      forHost:[NSString stringWithUTF8String:argv[1]]
-//                                                            completionHandler:^(BOOL success) {
-//            NSLog(@"Success? %d", success);
-//        }];
 
-//        NSLog(@"%@", mxsService);
-
-        BOOL shouldKeepRunning = YES; // global
+        BOOL shouldKeepRunning = YES; //Probably make this global
         NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
         while (shouldKeepRunning && [runLoop runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]]);
     }
