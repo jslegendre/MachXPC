@@ -74,6 +74,7 @@
         } else {
             handler(YES);
         }
+        mach_port_deallocate(mach_task_self(), server_port);
     });
 }
 

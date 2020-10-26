@@ -97,6 +97,7 @@ xpc_endpoint_t (*_xpc_endpoint_create)(mach_port_t);
 
 - (void)dealloc {
     dispatch_source_cancel(_dispatchSrc);
+    mach_port_deallocate(mach_task_self(), _server_port);
 }
 
 + (void)load {
