@@ -9,11 +9,6 @@
 #import <MachXPC/MachXPC-Internal.h>
 #import <servers/bootstrap.h>
 
-@interface NSXPCListenerEndpoint (Private)
--(xpc_endpoint_t)_endpoint;
-@end
-
-
 @interface MachXPCService ()
 @property (weak) NSXPCListener *listener;
 @end

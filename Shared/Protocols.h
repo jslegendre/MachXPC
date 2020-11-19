@@ -22,4 +22,11 @@
 
 @end
 
+@protocol ListenerAppProtocol <NSObject>
+
+- (void)setLabelText:(NSString *)label;
+- (void)getLabelText:(void(^)(NSString *connection))reply;
+
+@end
+
 #endif /* Protocols_h */

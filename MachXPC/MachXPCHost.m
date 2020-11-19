@@ -13,11 +13,6 @@
 
 xpc_endpoint_t (*_xpc_endpoint_create)(mach_port_t);
 
-@interface NSXPCListenerEndpoint (Private)
--(void)_setEndpoint:(xpc_endpoint_t)xpcEndpoint;
--(xpc_endpoint_t)_endpoint;
-@end;
-
 @interface MachXPCHost ()
 @property (nonatomic, copy, nonnull) void (^handler)(NSString *serviceIdentifier, NSXPCListenerEndpoint *);
 @property (nonnull) dispatch_queue_t listenerQueue;

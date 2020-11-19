@@ -11,6 +11,7 @@
 typedef struct {
     mach_msg_header_t header;
 } msg_format_request_t;
+
 // receive-side version of the request message (as seen by the server)
 typedef struct {
     mach_msg_header_t  header;
@@ -33,5 +34,10 @@ typedef struct {
     mach_msg_ool_descriptor64_t ool;
     mach_msg_trailer_t trailer;
 } msg_format_response_r_t;
+
+@interface NSXPCListenerEndpoint (Private)
+-(void)_setEndpoint:(xpc_endpoint_t)xpcEndpoint;
+-(xpc_endpoint_t)_endpoint;
+@end
 
 #endif /* MachXPC_Internal_h */

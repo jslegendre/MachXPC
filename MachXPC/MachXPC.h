@@ -16,3 +16,5 @@ FOUNDATION_EXPORT const unsigned char MachXPCVersionString[];
 
 #import <MachXPC/MachXPCService.h>
 #import <MachXPC/MachXPCHost.h>
+#import <MachXPC/MachXPCConnection.h>
+#import <MachXPC/MachXPCListener.h>

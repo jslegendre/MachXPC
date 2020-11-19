@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091963582566026B00B4C311 /* MachXPCListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 091963562566026B00B4C311 /* MachXPCListener.h */; };
+		091963592566026B00B4C311 /* MachXPCListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 091963572566026B00B4C311 /* MachXPCListener.m */; };
+		0919635E2566027A00B4C311 /* MachXPCConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0919635C2566027A00B4C311 /* MachXPCConnection.h */; };
+		0919635F2566027A00B4C311 /* MachXPCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919635D2566027A00B4C311 /* MachXPCConnection.m */; };
+		0919637425661B7000B4C311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919637325661B7000B4C311 /* AppDelegate.m */; };
+		0919637625661B7300B4C311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0919637525661B7300B4C311 /* Assets.xcassets */; };
+		0919637925661B7300B4C311 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0919637725661B7300B4C311 /* MainMenu.xib */; };
+		0919637C25661B7300B4C311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919637B25661B7300B4C311 /* main.m */; };
+		0919638C25661B8B00B4C311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919638B25661B8B00B4C311 /* AppDelegate.m */; };
+		0919638E25661B8E00B4C311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0919638D25661B8E00B4C311 /* Assets.xcassets */; };
+		0919639125661B8E00B4C311 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0919638F25661B8E00B4C311 /* MainMenu.xib */; };
+		0919639425661B8E00B4C311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919639325661B8E00B4C311 /* main.m */; };
+		0919639D25661BA800B4C311 /* MachXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957C9DC25392D2C0032B3C9 /* MachXPC.framework */; };
+		0919639E25661BA800B4C311 /* MachXPC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957C9DC25392D2C0032B3C9 /* MachXPC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		091963A825661BCF00B4C311 /* MachXPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957C9DC25392D2C0032B3C9 /* MachXPC.framework */; };
+		091963A925661BCF00B4C311 /* MachXPC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957C9DC25392D2C0032B3C9 /* MachXPC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0957C9E125392D2C0032B3C9 /* MachXPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0957C9DF25392D2C0032B3C9 /* MachXPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0957C9F025392D4A0032B3C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0957C9EF25392D4A0032B3C9 /* AppDelegate.m */; };
 		0957C9F225392D4D0032B3C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0957C9F125392D4D0032B3C9 /* Assets.xcassets */; };
@@ -26,6 +42,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0919639F25661BA800B4C311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0957C9D325392D2C0032B3C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0957C9DB25392D2C0032B3C9;
+			remoteInfo = MachXPC;
+		};
+		091963AA25661BCF00B4C311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0957C9D325392D2C0032B3C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0957C9DB25392D2C0032B3C9;
+			remoteInfo = MachXPC;
+		};
 		0959F6752539435900170535 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0957C9D325392D2C0032B3C9 /* Project object */;
@@ -36,6 +66,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		091963A125661BA800B4C311 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0919639E25661BA800B4C311 /* MachXPC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		091963AC25661BCF00B4C311 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				091963A925661BCF00B4C311 /* MachXPC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0959F68B2539494900170535 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,6 +101,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		091963562566026B00B4C311 /* MachXPCListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachXPCListener.h; sourceTree = "<group>"; };
+		091963572566026B00B4C311 /* MachXPCListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachXPCListener.m; sourceTree = "<group>"; };
+		0919635C2566027A00B4C311 /* MachXPCConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachXPCConnection.h; sourceTree = "<group>"; };
+		0919635D2566027A00B4C311 /* MachXPCConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachXPCConnection.m; sourceTree = "<group>"; };
+		0919637025661B7000B4C311 /* MachXPCListenerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MachXPCListenerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0919637225661B7000B4C311 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0919637325661B7000B4C311 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0919637525661B7300B4C311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0919637825661B7300B4C311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0919637A25661B7300B4C311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0919637B25661B7300B4C311 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0919637D25661B7300B4C311 /* MachXPCListenerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MachXPCListenerApp.entitlements; sourceTree = "<group>"; };
+		0919638825661B8B00B4C311 /* MachXPCConnectionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MachXPCConnectionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0919638A25661B8B00B4C311 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0919638B25661B8B00B4C311 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0919638D25661B8E00B4C311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0919639025661B8E00B4C311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0919639225661B8E00B4C311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0919639325661B8E00B4C311 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0919639525661B8E00B4C311 /* MachXPCConnectionApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MachXPCConnectionApp.entitlements; sourceTree = "<group>"; };
 		0957C9DC25392D2C0032B3C9 /* MachXPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MachXPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0957C9DF25392D2C0032B3C9 /* MachXPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachXPC.h; sourceTree = "<group>"; };
 		0957C9E025392D2C0032B3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +145,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0919636D25661B7000B4C311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0919639D25661BA800B4C311 /* MachXPC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0919638525661B8B00B4C311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091963A825661BCF00B4C311 /* MachXPC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0957C9D925392D2C0032B3C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,6 +187,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0919637125661B7000B4C311 /* MachXPCListenerApp */ = {
+			isa = PBXGroup;
+			children = (
+				0919637225661B7000B4C311 /* AppDelegate.h */,
+				0919637325661B7000B4C311 /* AppDelegate.m */,
+				0919637525661B7300B4C311 /* Assets.xcassets */,
+				0919637725661B7300B4C311 /* MainMenu.xib */,
+				0919637A25661B7300B4C311 /* Info.plist */,
+				0919637B25661B7300B4C311 /* main.m */,
+				0919637D25661B7300B4C311 /* MachXPCListenerApp.entitlements */,
+			);
+			path = MachXPCListenerApp;
+			sourceTree = "<group>";
+		};
+		0919638925661B8B00B4C311 /* MachXPCConnectionApp */ = {
+			isa = PBXGroup;
+			children = (
+				0919638A25661B8B00B4C311 /* AppDelegate.h */,
+				0919638B25661B8B00B4C311 /* AppDelegate.m */,
+				0919638D25661B8E00B4C311 /* Assets.xcassets */,
+				0919638F25661B8E00B4C311 /* MainMenu.xib */,
+				0919639225661B8E00B4C311 /* Info.plist */,
+				0919639325661B8E00B4C311 /* main.m */,
+				0919639525661B8E00B4C311 /* MachXPCConnectionApp.entitlements */,
+			);
+			path = MachXPCConnectionApp;
+			sourceTree = "<group>";
+		};
 		0957C9D225392D2C0032B3C9 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +222,8 @@
 				0957CA0D25392F0E0032B3C9 /* Shared */,
 				0957C9ED25392D4A0032B3C9 /* MachXPCTestApp */,
 				0957CA0425392D6D0032B3C9 /* MachXPCBackgroundProcess */,
+				0919637125661B7000B4C311 /* MachXPCListenerApp */,
+				0919638925661B8B00B4C311 /* MachXPCConnectionApp */,
 				0957C9DD25392D2C0032B3C9 /* Products */,
 				0959F6772539436300170535 /* Frameworks */,
 			);
@@ -117,6 +235,8 @@
 				0957C9DC25392D2C0032B3C9 /* MachXPC.framework */,
 				0957C9EC25392D4A0032B3C9 /* MachXPCTestApp.app */,
 				0957CA0325392D6D0032B3C9 /* MachXPCBackgroundProcess */,
+				0919637025661B7000B4C311 /* MachXPCListenerApp.app */,
+				0919638825661B8B00B4C311 /* MachXPCConnectionApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +249,10 @@
 				0957CA2B253938A20032B3C9 /* MachXPCHost.m */,
 				0957CA1B253935F20032B3C9 /* MachXPCService.h */,
 				0957CA1C253935F20032B3C9 /* MachXPCService.m */,
+				091963562566026B00B4C311 /* MachXPCListener.h */,
+				091963572566026B00B4C311 /* MachXPCListener.m */,
+				0919635C2566027A00B4C311 /* MachXPCConnection.h */,
+				0919635D2566027A00B4C311 /* MachXPCConnection.m */,
 				0959F66F2539412A00170535 /* MachXPC-Internal.h */,
 				0959F69F2539540100170535 /* SymRez */,
 				0957C9E025392D2C0032B3C9 /* Info.plist */,
@@ -191,7 +315,9 @@
 			files = (
 				0959F69B253953EE00170535 /* SymRez.h in Headers */,
 				0957CA2C253938A20032B3C9 /* MachXPCHost.h in Headers */,
+				091963582566026B00B4C311 /* MachXPCListener.h in Headers */,
 				0957C9E125392D2C0032B3C9 /* MachXPC.h in Headers */,
+				0919635E2566027A00B4C311 /* MachXPCConnection.h in Headers */,
 				0957CA1D253935F20032B3C9 /* MachXPCService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +325,44 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0919636F25661B7000B4C311 /* MachXPCListenerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0919637E25661B7300B4C311 /* Build configuration list for PBXNativeTarget "MachXPCListenerApp" */;
+			buildPhases = (
+				0919636C25661B7000B4C311 /* Sources */,
+				0919636D25661B7000B4C311 /* Frameworks */,
+				0919636E25661B7000B4C311 /* Resources */,
+				091963A125661BA800B4C311 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				091963A025661BA800B4C311 /* PBXTargetDependency */,
+			);
+			name = MachXPCListenerApp;
+			productName = MachXPCListenerApp;
+			productReference = 0919637025661B7000B4C311 /* MachXPCListenerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0919638725661B8B00B4C311 /* MachXPCConnectionApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0919639625661B8E00B4C311 /* Build configuration list for PBXNativeTarget "MachXPCConnectionApp" */;
+			buildPhases = (
+				0919638425661B8B00B4C311 /* Sources */,
+				0919638525661B8B00B4C311 /* Frameworks */,
+				0919638625661B8B00B4C311 /* Resources */,
+				091963AC25661BCF00B4C311 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				091963AB25661BCF00B4C311 /* PBXTargetDependency */,
+			);
+			name = MachXPCConnectionApp;
+			productName = MachXPCConnectionApp;
+			productReference = 0919638825661B8B00B4C311 /* MachXPCConnectionApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		0957C9DB25392D2C0032B3C9 /* MachXPC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0957C9E425392D2C0032B3C9 /* Build configuration list for PBXNativeTarget "MachXPC" */;
@@ -260,6 +424,12 @@
 			attributes = {
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					0919636F25661B7000B4C311 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					0919638725661B8B00B4C311 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					0957C9DB25392D2C0032B3C9 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -287,11 +457,31 @@
 				0957C9DB25392D2C0032B3C9 /* MachXPC */,
 				0957C9EB25392D4A0032B3C9 /* MachXPCTestApp */,
 				0957CA0225392D6D0032B3C9 /* MachXPCBackgroundProcess */,
+				0919636F25661B7000B4C311 /* MachXPCListenerApp */,
+				0919638725661B8B00B4C311 /* MachXPCConnectionApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0919636E25661B7000B4C311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0919637625661B7300B4C311 /* Assets.xcassets in Resources */,
+				0919637925661B7300B4C311 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0919638625661B8B00B4C311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0919638E25661B8E00B4C311 /* Assets.xcassets in Resources */,
+				0919639125661B8E00B4C311 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0957C9DA25392D2C0032B3C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,10 +502,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0919636C25661B7000B4C311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0919637C25661B7300B4C311 /* main.m in Sources */,
+				0919637425661B7000B4C311 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0919638425661B8B00B4C311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0919639425661B8E00B4C311 /* main.m in Sources */,
+				0919638C25661B8B00B4C311 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0957C9D825392D2C0032B3C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091963592566026B00B4C311 /* MachXPCListener.m in Sources */,
+				0919635F2566027A00B4C311 /* MachXPCConnection.m in Sources */,
 				0957CA2D253938A20032B3C9 /* MachXPCHost.m in Sources */,
 				0957CA1E253935F20032B3C9 /* MachXPCService.m in Sources */,
 				0959F69C253953EE00170535 /* SymRez.m in Sources */,
@@ -342,6 +552,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		091963A025661BA800B4C311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0957C9DB25392D2C0032B3C9 /* MachXPC */;
+			targetProxy = 0919639F25661BA800B4C311 /* PBXContainerItemProxy */;
+		};
+		091963AB25661BCF00B4C311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0957C9DB25392D2C0032B3C9 /* MachXPC */;
+			targetProxy = 091963AA25661BCF00B4C311 /* PBXContainerItemProxy */;
+		};
 		0959F6762539435900170535 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0957CA0225392D6D0032B3C9 /* MachXPCBackgroundProcess */;
@@ -350,6 +570,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0919637725661B7300B4C311 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0919637825661B7300B4C311 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0919638F25661B8E00B4C311 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0919639025661B8E00B4C311 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		0957C9F325392D4D0032B3C9 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,6 +597,94 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0919637F25661B7300B4C311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MachXPCListenerApp/MachXPCListenerApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G9T88PYL48;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = MachXPCListenerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jslegendre.MachXPCListenerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0919638025661B7300B4C311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MachXPCListenerApp/MachXPCListenerApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G9T88PYL48;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = MachXPCListenerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jslegendre.MachXPCListenerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0919639725661B8E00B4C311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MachXPCConnectionApp/MachXPCConnectionApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G9T88PYL48;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = MachXPCConnectionApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jslegendre.MachXPCConnectionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0919639825661B8E00B4C311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MachXPCConnectionApp/MachXPCConnectionApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G9T88PYL48;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = MachXPCConnectionApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jslegendre.MachXPCConnectionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0957C9E225392D2C0032B3C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -542,6 +866,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.jslegendre.MachXPCTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -563,6 +888,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.jslegendre.MachXPCTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -576,6 +902,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks/";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -589,6 +916,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks/";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -597,6 +925,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0919637E25661B7300B4C311 /* Build configuration list for PBXNativeTarget "MachXPCListenerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0919637F25661B7300B4C311 /* Debug */,
+				0919638025661B7300B4C311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0919639625661B8E00B4C311 /* Build configuration list for PBXNativeTarget "MachXPCConnectionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0919639725661B8E00B4C311 /* Debug */,
+				0919639825661B8E00B4C311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0957C9D625392D2C0032B3C9 /* Build configuration list for PBXProject "MachXPC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
