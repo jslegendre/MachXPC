@@ -11,6 +11,10 @@
 #import <MachXPC/SymRez/SymRez.h>
 #include <servers/bootstrap.h>
 
+#if __has_feature(ptrauth_calls)
+#include <ptrauth.h>
+#endif
+
 xpc_endpoint_t (*_xpc_endpoint_create)(mach_port_t);
 
 @interface MachXPCHost ()
@@ -99,6 +103,10 @@ xpc_endpoint_t (*_xpc_endpoint_create)(mach_port_t);
     // For the love of god Apple just export the symbols so I don't have to keep doing this
     symrez_t sr_xpc = symrez_new("libxpc.dylib");
     _xpc_endpoint_create = sr_resolve_symbol(sr_xpc, "__xpc_endpoint_create");
+#if __has_feature(ptrauth_calls)
+    _xpc_endpoint_create = ptrauth_strip(_xpc_endpoint_create, ptrauth_key_function_pointer);
+    _xpc_endpoint_create = ptrauth_sign_unauthenticated(_xpc_endpoint_create, ptrauth_key_function_pointer, 0);
+#endif
     free(sr_xpc);
 }
 @end
