@@ -12,13 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MachXPCHost : NSObject
 @property (readonly) NSString *name;
 
-- (instancetype)initWithName:(NSString *)name connectionHandler:(void(^)(NSString *serviceIdentifier, NSXPCListenerEndpoint *listener))handler;
+- (instancetype)initWithName:(NSString *)name connectionHandler:(void (^)(NSString *serviceIdentifier, NSXPCListenerEndpoint *listener))handler;
 
-- (instancetype)initWithConnectionHandler:(void(^)(NSString *serviceIdentifier, NSXPCListenerEndpoint *listener))handler;
+- (instancetype)initWithConnectionHandler:(void (^)(NSString *serviceIdentifier, NSXPCListenerEndpoint *listener))handler;
 
 - (void)suspend;
 
 - (void)resume;
+
+- (void)cancel;
+
+- (void)destroy;
+
 @end
 
 NS_ASSUME_NONNULL_END
