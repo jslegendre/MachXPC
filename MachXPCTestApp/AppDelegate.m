@@ -38,6 +38,19 @@ pid_t p;
         self.con.exportedInterface = [NSXPCInterface interfaceWithProtocol:@protocol(MainAppProtocol)];
         self.con.exportedObject = self;
         id<ServiceProtocol> proxy = self.con.remoteObjectProxy;
+        
+        [self.con setInterruptionHandler:^ {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [NSApp terminate:nil];
+            });
+        }];
+        
+        [self.con setInvalidationHandler:^ {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [NSApp terminate:nil];
+            });
+        }];
+        
         [self.con resume];
         
         [proxy doProcessing: ^(NSString *response) {

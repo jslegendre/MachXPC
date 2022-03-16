@@ -21,8 +21,28 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [MachXPCConnection connectionFromMachXPCListener:@"com.listener.app" handler:^(NSXPCConnection *connection) {
+        if (!connection) {
+            NSLog(@"Could not establish connection");
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [NSApp terminate:nil];
+            });
+        }
+        
         connection.remoteObjectInterface = [NSXPCInterface interfaceWithProtocol:@protocol(ListenerAppProtocol)];
         self.proxy = connection.remoteObjectProxy;
+        
+        [connection setInterruptionHandler:^ {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [NSApp terminate:nil];
+            });
+        }];
+        
+        [connection setInvalidationHandler:^ {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [NSApp terminate:nil];
+            });
+        }];
+        
         [connection resume];
         dispatch_async(dispatch_get_main_queue(), ^{
             self.connectionStatus.stringValue = @"Connected";
